@@ -38,7 +38,25 @@ class WebUser implements AppObject
   // TODO Implement
   public static function & findAll(PDO $dbContext)
   {
-    return array();
+      //es implementado el metodo buscar todo
+    $sqlQuery = 
+      "select * from web_user order by name_web_user";
+
+    $stmt = $dbContext->prepare($sqlQuery);
+
+    if(! $stmt->execute() )
+      return AppObject::DB_ERROR;
+
+    $numRows = $stmt->rowCount();
+
+    $resultArray = array();
+
+    for($i=0;$i<$numRows;$i++)
+      {
+	$resultArray[] =  new WebUser($stmt);
+      }
+      
+      return $resultArray;
   }
 
   public static function findById(PDO $dbContext,$id)

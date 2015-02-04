@@ -149,7 +149,8 @@ class WebUserActions
 		$parameters['appAction']['editForm']   = md5(__CLASS__.'.editForm');
 		$parameters['appAction']['view']       = md5(__CLASS__.'.view');
 
-		$parameters['searchResults'] = array();
+		$parameters['searchResults'] = WebUser::findAll($dbContext);
+                var_dump($parameters);
 
 		require_once(TEMPLATES_PATH.'/tInitial.php');
 	}
