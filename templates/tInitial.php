@@ -6,7 +6,7 @@
 <html>
 <head>
 	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-	<script src="<?php echo STATIC_WEBCONTENT_PATH;?>/js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="<?php echo STATIC_WEBCONTENT_PATH;?>/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>	
 </head>
 <body>
 

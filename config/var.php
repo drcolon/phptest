@@ -1,9 +1,9 @@
 <?php
 
-define('DB_NAME','');
-define('DB_HOST','');
-define('DB_USER','');
-define('DB_PASS','');
+define('DB_NAME','testphp');
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASS','root');
 
 define('CLASSES_PATH'   ,INDEX_PATH.'/classes');
 define('TEMPLATES_PATH' ,INDEX_PATH.'/templates');
